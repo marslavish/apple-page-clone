@@ -1,0 +1,276 @@
+:root {
+  --navbar-width: 98rem;
+  --thin: 100;
+  --light: 300;
+  --regular: 400;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+/** NAVBAR */
+nav {
+  position: relative;
+  top: 8rem;
+  z-index: 1;
+
+  padding: 0 2.2rem;
+}
+
+.items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: var(--navbar-width);
+  height: 35px;
+  margin: 0 auto;
+
+  border: 1px solid #5c5c5c;
+  border-radius: 4px;
+}
+
+.items li {
+  width: 104px;
+
+  line-height: 35px;
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: var(--light);
+
+  border-right: 1px solid #4f4e4e;
+  background: linear-gradient(#7b7b7bec, #707070 50%, #5e5e5e 50%, #777777);
+
+  list-style: none;
+  cursor: pointer;
+}
+
+.items li:hover:not(.search) {
+  background: linear-gradient(#6d6d6d, #444444 50%, #393939 50%, #545454);
+}
+
+.items a {
+  color: white;
+  text-decoration: none;
+}
+
+/** APPLE LOGO  */
+.items .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 35px;
+}
+
+.items .logo-img {
+  width: 2.2rem;
+  margin-bottom: 3px;
+}
+
+/** SEARCH FIELD  */
+.items .search {
+  position: relative;
+  width: 150px;
+  background: linear-gradient(#848484, #707070 50%, #5e5e5e 50%, #777777);
+}
+
+.search-icon-white {
+  position: absolute;
+  top: 10px;
+  left: 20px;
+
+  width: 1.6rem;
+}
+
+.search-box {
+  width: 120px;
+  height: 22px;
+  margin: 0 auto;
+
+  text-indent: 2.1rem;
+
+  border-radius: 11px;
+  background: linear-gradient(#7d7d7d, #7f7f7f 50%, #6e6e6e 50%, #858585);
+
+  outline: none;
+  transition: background 0.2s ease-in-out;
+}
+
+.search-box:focus {
+  background: white;
+}
+
+/** SECTION  */
+.main-content {
+  position: relative;
+  top: -35px;
+
+  min-width: calc(var(--navbar-width) + 4.4rem);
+  height: 54rem;
+}
+
+.main-content__section {
+  width: 100%;
+  height: 100%;
+
+  color: #e0e6ec;
+
+  background: url("https://web.archive.org/web/20140301004302im_/http://images.apple.com/v/home/as/images/your_verse_hero.jpg")
+    40% 100% no-repeat;
+}
+
+.main-content__section .title {
+  position: relative;
+  top: 16rem;
+
+  font-size: 6rem;
+  font-weight: var(--thin);
+  text-align: center;
+}
+
+.main-content__section .subtitle {
+  position: relative;
+  top: 16rem;
+
+  width: 80rem;
+  margin: 1rem auto;
+
+  font-size: 3rem;
+  text-align: center;
+  line-height: 4rem;
+  font-weight: var(--thin);
+}
+
+.main-content__section .video-link {
+  position: relative;
+  top: 16rem;
+  margin-top: 2.8rem;
+  text-align: center;
+}
+
+.main-content__section .video-link > a {
+  display: inline-block;
+
+  color: #e0e6ec;
+  font-size: 2.4rem;
+  font-weight: var(--thin);
+  text-decoration: none;
+  line-height: 0.85;
+}
+
+.main-content__section .video-link > a:hover {
+  border-bottom: 1px solid #e0e6ec89;
+}
+
+/** ASIDE  */
+.group {
+  position: relative;
+  top: -33px;
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 2px;
+  min-width: calc(var(--navbar-width) + 4.4rem);
+}
+
+.group-img {
+  width: 100%;
+  height: 200px;
+  cursor: pointer;
+}
+
+.group-img.one {
+  background: url("https://web.archive.org/web/20140301004610im_/http://images.apple.com/home/images/promo_iphone5s.jpg")
+    30% 100% no-repeat;
+}
+
+.group-img.two {
+  background: url("https://web.archive.org/web/20140301004610im_/http://images.apple.com/home/images/promo_iphone5c.jpg")
+    30% 100% no-repeat;
+}
+
+.group-img.three {
+  background: url("https://web.archive.org/web/20140301004610im_/http://images.apple.com/home/images/promo_30_years.jpg")
+    30% 100% no-repeat;
+}
+
+.group-img.four {
+  background: url("https://web.archive.org/web/20140301004610im_/http://images.apple.com/home/images/promo_supplier_responsibility.jpg")
+    30% 100% no-repeat;
+}
+
+/** FOOTER  */
+footer {
+  position: relative;
+  top: -10px;
+
+  min-width: calc(var(--navbar-width) + 4.4rem);
+
+  color: #909090;
+  font-size: 1.1rem;
+}
+
+footer a {
+  color: #1f94d1;
+  text-decoration: none;
+}
+
+footer li {
+  list-style: none;
+}
+
+.footer-content {
+  width: 98rem;
+  height: 6rem;
+  margin: 0 auto;
+}
+
+.bottom-text {
+  display: inline-block;
+}
+
+.bottom-text.shop {
+  width: 46%;
+}
+
+.bottom-text.copyright {
+  margin-top: 1.6rem;
+}
+
+.bottom-items {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bottom-items.site-map {
+  width: 53%;
+}
+
+.bottom-items li:not(.first) {
+  border-left: 1px solid #ccc;
+  margin-left: 0.6rem;
+  padding-left: 0.6rem;
+}
+
+.bottom-items .flag {
+  position: relative;
+  width: 1.3rem;
+  height: 1.3rem;
+}
+
+.bottom-items .flag img {
+  position: relative;
+  top: -2px;
+}
